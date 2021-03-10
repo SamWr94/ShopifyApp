@@ -11,6 +11,6 @@ class StoreLocatorTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(App\Shop::class,2000)->create();
     }
 }

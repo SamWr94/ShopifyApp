@@ -14,15 +14,14 @@ class CreateShopsTable extends Migration
     public function up()
     {
         Schema::create('shops', function (Blueprint $table) {
-            $table->increments('ID');
-            $table->string('Name', 50);
-            $table->text('Description')->nullable();
-            $table->string('Address');
-            $table->string('City');
-            $table->string('Province');
-            $table->string('Postcode');
-            $table->float('Lat', 10, 6);
-            $table->float('Lng', 10, 6);
+            $table->increments('id');
+            $table->string('name', 50);
+            $table->text('description')->nullable();
+            $table->string('address');
+            $table->string('city');
+            $table->string('postcode');
+            $table->float('lat', 10, 6);
+            $table->float('lng', 10, 6);
             $table->timestamps();
         });
     }
